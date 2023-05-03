@@ -12,7 +12,7 @@ public class NewTest_2 {
 	  driver = new ChromeDriver();
 	  
 	  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");   
-	    
+	 driver.quit();   
 	  
 	  
 	  
