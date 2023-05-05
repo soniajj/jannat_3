@@ -11,19 +11,19 @@ public class NewTest_1 {
   public void f() throws InterruptedException {
 	  WebDriver driver;
 	  driver= new ChromeDriver();
-		driver.get("https://www.applevacations.com/#!/");
+		driver.get("https://us.megabus.com/account-management/login");
 		Thread.sleep(5000);  
-		driver.switchTo().alert().dismiss();
-		driver.findElement(By.xpath("//*[@id=\"placeholder\"]")).sendKeys("Minneapolis (MSP)");
+		
+		//driver.findElement(By.xpath("//*[@id=\"placeholder\"]")).sendKeys("Minneapolis (MSP)");
+		//Thread.sleep(5000); 
+		driver.findElement(By.xpath("(//a[@class='btn btn-link btn-block'])[1]t")).click();
 		Thread.sleep(5000); 
-		driver.findElement(By.className("passengersCount")).click();
-	  
-		new Select(driver.findElement(By.id("scc_rt_passengers_numrooms"))).selectByVisibleText("1 Room");
+		/*new Select(driver.findElement(By.id("scc_rt_passengers_numrooms"))).selectByVisibleText("1 Room");
 		Thread.sleep(5000); 
 		new Select(driver.findElement(By.id("passengers_1_adults"))).selectByVisibleText("2 Adults");
 		Thread.sleep(5000); 
 		new Select(driver.findElement(By.id("passengers_1_kids"))).selectByVisibleText("1 Child");
-		Thread.sleep(5000); 
+		Thread.sleep(5000); */
 		
 	  
 	  
